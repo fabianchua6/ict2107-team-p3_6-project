@@ -1,0 +1,5 @@
+org/example/GlassdoorSentimentAnalysis.class
+org/example/SentimentMapper.class
+org/example/SentimentReducer.class
+org/example/ConcatenateMapper.class
+org/example/ValidationMapper.class
