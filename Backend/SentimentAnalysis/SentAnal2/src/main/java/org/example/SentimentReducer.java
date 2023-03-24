@@ -1,31 +1,45 @@
 package org.example;
 
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Reducer;
+
+import java.io.IOException;
+import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 
-public class SentimentReducer extends Reducer<Text, Text, Text, Text> {
+public class SentimentReducer extends Reducer<Text, LongWritable, Text, Text> {
 
     @Override
-    protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-        int positiveCount = 0;
-        int negativeCount = 0;
+    protected void reduce(Text key, Iterable<LongWritable> values, Context context) throws IOException, InterruptedException {
+        int[] sentimentCounts = new int[5]; // For sentiment ratings 0 to 4
+        int totalCount = 0;
 
-        for (Text value : values) {
-            String[] parts = value.toString().split("\t");
-            if (parts[0].equals("positive")) {
-                positiveCount += Integer.parseInt(parts[1]);
-            } else if (parts[0].equals("negative")) {
-                negativeCount += Integer.parseInt(parts[1]);
-            }
+        for (LongWritable value : values) {
+            int sentimentClass = (int) value.get();
+
+            totalCount++;
+            sentimentCounts[sentimentClass]++;
         }
 
-        int sentimentScore = positiveCount - negativeCount;
-        String outputValue = String.format("Positive: %d, Negative: %d, Sentiment Score: %d", positiveCount, negativeCount, sentimentScore);
+        String outputValue = String.format("\nTotal Sentiments: %d\n" +
+                        "Very negative: %d\n" +
+                        "Negative: %d\n" +
+                        "Neutral: %d\n" +
+                        "Positive: %d\n" +
+                        "Very positive: %d",
+                totalCount,
+                sentimentCounts[0],
+                sentimentCounts[1],
+                sentimentCounts[2],
+                sentimentCounts[3],
+                sentimentCounts[4]
+        );
+
         context.write(key, new Text(outputValue));
     }
 }
-
-
 
