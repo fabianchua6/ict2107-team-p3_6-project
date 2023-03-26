@@ -9,42 +9,43 @@ import org.apache.hadoop.mapreduce.lib.chain.ChainMapper;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class GlassdoorSentimentAnalysis {
+import java.net.URI;
+
+public class WordComparisonAnalysis {
 
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
-        Job job = Job.getInstance(conf, "GlassdoorSentimentAnalysis");
-        job.setJarByClass(GlassdoorSentimentAnalysis.class);
+        Job job = Job.getInstance(conf, "WordComparisonAnalysis");
+        job.setJarByClass(WordComparisonAnalysis.class);
 
         // Set input and output paths
-//        Path inPath = new Path("hdfs://localhost:9000/user/project/input/");
-//        Path outPath = new Path("hdfs://localhost:9000/user/project/output/");
-
-        Path inPath = new Path("hdfs://localhost:9000/user/shaunv/project/test/input/");
-        Path outPath = new Path("hdfs://localhost:9000/user/shaunv/project/test/output/");
+        Path inPath = new Path("hdfs://localhost:9000/user/shaunv/project/test2/input/");
+        Path outPath = new Path("hdfs://localhost:9000/user/shaunv/project/test2/output/");
         // Delete any previous outputs
         outPath.getFileSystem(conf).delete(outPath, true);
 
+        // Add words.csv to the distributed cache
+        job.addCacheFile(new URI("hdfs://localhost:9000/user/shaunv/project/test/words.csv"));
+
+        //Add ChainMapper configs
         Configuration validationConf = new Configuration(false);
         ChainMapper.addMapper(job, ValidationMapper.class, LongWritable.class, Text.class, LongWritable.class, Text.class, validationConf);
 
-        Configuration concatenateConf = new Configuration(false);
-        ChainMapper.addMapper(job, ConcatenateMapper.class, LongWritable.class, Text.class, LongWritable.class, Text.class, concatenateConf);
-
         Configuration sentimentConf = new Configuration(false);
-        ChainMapper.addMapper(job, NLPMapper.class, LongWritable.class, Text.class, Text.class, LongWritable.class, sentimentConf);
+        ChainMapper.addMapper(job, WordMapper.class, LongWritable.class, Text.class, Text.class, LongWritable.class, sentimentConf);
 
         job.setMapperClass(ChainMapper.class);
         job.setMapOutputKeyClass(Text.class);
-        job.setMapOutputValueClass(LongWritable.class);
+        job.setMapOutputValueClass(Text.class);
 
-//        job.setCombinerClass(SentimentReducer.class);
-        job.setReducerClass(SentimentReducer.class);
+        job.setReducerClass(WordReducer.class);
 
         job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(Text.class); // Changed to Text
+        job.setOutputValueClass(Text.class);
         FileInputFormat.addInputPath(job, inPath);
         FileOutputFormat.setOutputPath(job, outPath);
+
         System.exit(job.waitForCompletion(true) ? 0 : 1);
+
     }
 }
