@@ -19,13 +19,13 @@ public class WordComparisonAnalysis {
         job.setJarByClass(WordComparisonAnalysis.class);
 
         // Set input and output paths
-        Path inPath = new Path("hdfs://localhost:9000/user/shaunv/project/test2/input/");
-        Path outPath = new Path("hdfs://localhost:9000/user/shaunv/project/test2/output/");
+        Path inPath = new Path("hdfs://localhost:9000/user/shaunv/project/wordMapInput/");
+        Path outPath = new Path("hdfs://localhost:9000/user/shaunv/project/wordMapOutput/");
         // Delete any previous outputs
         outPath.getFileSystem(conf).delete(outPath, true);
 
         // Add words.csv to the distributed cache
-        job.addCacheFile(new URI("hdfs://localhost:9000/user/shaunv/project/test/words.csv"));
+        job.addCacheFile(new URI("hdfs://localhost:9000/user/shaunv/project/words.csv"));
 
         //Add ChainMapper configs
         Configuration validationConf = new Configuration(false);
