@@ -4,19 +4,38 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 
-import java.io.File;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URI;
+import java.util.Hashtable;
 
 public class TopicModelingMapper extends Mapper<LongWritable, Text, Text, Text> {
 
-    File stopWordsFile = null;
+    Hashtable<String, Integer> stopWordsHashTable = new Hashtable<>();
+
+    public static String removeAllOccurrences(String sentence, String word) {
+        // Create regex pattern for the word to be removed
+        String pattern = "\\b" + word + "\\b\\s*";
+
+        // Remove all occurrences of the word using replaceAll() method
+        return sentence.replaceAll(pattern, "").trim();
+    }
 
     @Override
     protected void setup(Context context) throws IOException {
         URI[] cacheFiles = context.getCacheFiles();
         Path stopWordsPath = new Path(cacheFiles[0].getPath());
-        stopWordsFile = new File(stopWordsPath.getName());
+
+        BufferedReader br = new BufferedReader(new FileReader(stopWordsPath.getName()));
+        String line = "";
+        while (true) {
+            line = br.readLine();
+            if (line == null) {
+                break;
+            }
+            stopWordsHashTable.put(line, 1);
+        }
     }
 
     @Override
@@ -30,6 +49,12 @@ public class TopicModelingMapper extends Mapper<LongWritable, Text, Text, Text> 
         }
         String pros = fields[5].trim();
         String cons = fields[6].trim();
+
+        // Remove all occurrences of the stop words
+        for (String stopWord : stopWordsHashTable.keySet()) {
+            pros = removeAllOccurrences(pros, stopWord);
+            cons = removeAllOccurrences(cons, stopWord);
+        }
 
         // Get the file name
         String fileName = ((FileSplit) context.getInputSplit()).getPath().getName();

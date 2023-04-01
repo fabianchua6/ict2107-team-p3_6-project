@@ -15,6 +15,12 @@ import java.net.URI;
 
 public class TopicModelingJob {
     public static void main(String[] args) throws Exception {
+
+        if (args.length != 3) {
+            System.err.println("Usage: hadoop jar group_p3_6_tm.jar <input path> <output path> <stop words path>");
+            System.exit(-1);
+        }
+
         Configuration conf = new Configuration();
 
         FileSystem fs = FileSystem.get(conf);
