@@ -1,0 +1,112 @@
+{
+    "Accenture": {
+        "Number of Reviews Analysed": 8991,
+        "Average sentiment per review": 2.72,
+        "Breakdown of Sentiments": {
+            "Very Positive": 352,
+            "Positive": 6655,
+            "Neutral": 1283,
+            "Negative": 678,
+            "Very Negative": 23
+        }
+    },
+    "Apple": {
+        "Number of Reviews Analysed": 25475,
+        "Average sentiment per review": 3.59,
+        "Breakdown of Sentiments": {
+            "Very Positive": 2165,
+            "Positive": 17667,
+            "Neutral": 3122,
+            "Negative": 2400,
+            "Very Negative": 121
+        }
+    },
+    "Bloomberg": {
+        "Number of Reviews Analysed": 2606,
+        "Average sentiment per review": 3.25,
+        "Breakdown of Sentiments": {
+            "Very Positive": 196,
+            "Positive": 1860,
+            "Neutral": 259,
+            "Negative": 266,
+            "Very Negative": 25
+        }
+    },
+    "DBS": {
+        "Number of Reviews Analysed": 2471,
+        "Average sentiment per review": 2.26,
+        "Breakdown of Sentiments": {
+            "Very Positive": 66,
+            "Positive": 1826,
+            "Neutral": 349,
+            "Negative": 216,
+            "Very Negative": 14
+        }
+    },
+    "Google": {
+        "Number of Reviews Analysed": 14033,
+        "Average sentiment per review": 2.07,
+        "Breakdown of Sentiments": {
+            "Very Positive": 197,
+            "Positive": 10731,
+            "Neutral": 1998,
+            "Negative": 1090,
+            "Very Negative": 17
+        }
+    },
+    "Grab": {
+        "Number of Reviews Analysed": 1155,
+        "Average sentiment per review": 3.17,
+        "Breakdown of Sentiments": {
+            "Very Positive": 84,
+            "Positive": 832,
+            "Neutral": 127,
+            "Negative": 100,
+            "Very Negative": 12
+        }
+    },
+    "Meta": {
+        "Number of Reviews Analysed": 6482,
+        "Average sentiment per review": 3.22,
+        "Breakdown of Sentiments": {
+            "Very Positive": 400,
+            "Positive": 4566,
+            "Neutral": 803,
+            "Negative": 671,
+            "Very Negative": 42
+        }
+    },
+    "Microsoft": {
+        "Number of Reviews Analysed": 26700,
+        "Average sentiment per review": 3.25,
+        "Breakdown of Sentiments": {
+            "Very Positive": 1407,
+            "Positive": 20272,
+            "Neutral": 2972,
+            "Negative": 1995,
+            "Very Negative": 54
+        }
+    },
+    "Shopee": {
+        "Number of Reviews Analysed": 2535,
+        "Average sentiment per review": 2.18,
+        "Breakdown of Sentiments": {
+            "Very Positive": 79,
+            "Positive": 1868,
+            "Neutral": 300,
+            "Negative": 245,
+            "Very Negative": 43
+        }
+    },
+    "United Overseas Bank": {
+        "Number of Reviews Analysed": 1022,
+        "Average sentiment per review": 1.64,
+        "Breakdown of Sentiments": {
+            "Very Positive": 4,
+            "Positive": 737,
+            "Neutral": 175,
+            "Negative": 101,
+            "Very Negative": 5
+        }
+    }
+}
