@@ -3,7 +3,7 @@ import ReactWordcloud from 'react-wordcloud';
 import 'tippy.js/dist/tippy.css';
 import 'tippy.js/animations/scale.css';
 import companiesData from '../topicModellingFinalOutput.json';
-import { Box, Flex, Heading } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
 
 function WordCloud({ selectedCompany }) {
   const [prosWords, setProsWords] = useState([]);
