@@ -1,0 +1,272 @@
+[
+  {
+    "company": "Accenture",
+    "pros": [
+      "company",
+      "people",
+      "opportunities",
+      "culture",
+      "benefits",
+      "environment",
+      "balance",
+      "learning",
+      "projects",
+      "life"
+    ],
+    "cons": [
+      "hours",
+      "project",
+      "balance",
+      "long",
+      "salary",
+      "company",
+      "life",
+      "projects",
+      "management",
+      "people"
+    ]
+  },
+  {
+    "company": "Apple",
+    "pros": [
+      "benefits",
+      "people",
+      "company",
+      "pay",
+      "environment",
+      "products",
+      "culture",
+      "team",
+      "employees",
+      "place"
+    ],
+    "cons": [
+      "retail",
+      "management",
+      "hours",
+      "time",
+      "company",
+      "people",
+      "customers",
+      "balance",
+      "employees",
+      "pay"
+    ]
+  },
+  {
+    "company": "Bloomberg",
+    "pros": [
+      "benefits",
+      "people",
+      "company",
+      "culture",
+      "balance",
+      "environment",
+      "free",
+      "office",
+      "pay",
+      "life"
+    ],
+    "cons": [
+      "management",
+      "company",
+      "people",
+      "hours",
+      "long",
+      "career",
+      "time",
+      "culture",
+      "employees",
+      "managers"
+    ]
+  },
+  {
+    "company": "DBS",
+    "pros": [
+      "benefits",
+      "culture",
+      "environment",
+      "bank",
+      "life",
+      "balance",
+      "colleagues",
+      "staff",
+      "company",
+      "people"
+    ],
+    "cons": [
+      "long",
+      "hours",
+      "management",
+      "life",
+      "balance",
+      "pay",
+      "time",
+      "culture",
+      "slow",
+      "people"
+    ]
+  },
+  {
+    "company": "Google",
+    "pros": [
+      "people",
+      "benefits",
+      "company",
+      "culture",
+      "environment",
+      "place",
+      "perks",
+      "pay",
+      "balance",
+      "food"
+    ],
+    "cons": [
+      "company",
+      "long",
+      "hours",
+      "time",
+      "people",
+      "slow",
+      "management",
+      "balance",
+      "culture",
+      "life"
+    ]
+  },
+  {
+    "company": "Grab",
+    "pros": [
+      "culture",
+      "environment",
+      "people",
+      "company",
+      "benefits",
+      "team",
+      "life",
+      "flexible",
+      "balance",
+      "colleagues"
+    ],
+    "cons": [
+      "company",
+      "people",
+      "management",
+      "team",
+      "time",
+      "culture",
+      "life",
+      "fast",
+      "balance",
+      "managers"
+    ]
+  },
+  {
+    "company": "Meta",
+    "pros": [
+      "benefits",
+      "people",
+      "culture",
+      "company",
+      "perks",
+      "pay",
+      "food",
+      "salary",
+      "compensation",
+      "environment"
+    ],
+    "cons": [
+      "company",
+      "life",
+      "balance",
+      "people",
+      "culture",
+      "team",
+      "time",
+      "management",
+      "leadership",
+      "performance"
+    ]
+  },
+  {
+    "company": "Microsoft",
+    "pros": [
+      "benefits",
+      "people",
+      "company",
+      "culture",
+      "balance",
+      "life",
+      "environment",
+      "opportunities",
+      "pay",
+      "place"
+    ],
+    "cons": [
+      "company",
+      "management",
+      "people",
+      "politics",
+      "time",
+      "balance",
+      "slow",
+      "team",
+      "culture",
+      "life"
+    ]
+  },
+  {
+    "company": "Shopee",
+    "pros": [
+      "environment",
+      "team",
+      "people",
+      "benefits",
+      "fast",
+      "learn",
+      "company",
+      "colleagues",
+      "culture",
+      "office"
+    ],
+    "cons": [
+      "management",
+      "company",
+      "team",
+      "hours",
+      "life",
+      "people",
+      "balance",
+      "chinese",
+      "long",
+      "culture"
+    ]
+  },
+  {
+    "company": "United Overseas Bank",
+    "pros": [
+      "benefits",
+      "colleagues",
+      "environment",
+      "culture",
+      "balance",
+      "life",
+      "friendly",
+      "family",
+      "people",
+      "bonus"
+    ],
+    "cons": [
+      "long",
+      "hours",
+      "management",
+      "life",
+      "balance",
+      "culture",
+      "pay",
+      "slow",
+      "salary",
+      "progression"
+    ]
+  }
+]
