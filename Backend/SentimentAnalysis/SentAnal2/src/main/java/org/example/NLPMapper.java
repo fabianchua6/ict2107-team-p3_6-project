@@ -5,6 +5,8 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -20,7 +22,8 @@ import org.apache.poi.ss.formula.functions.T;
 public class NLPMapper extends Mapper<LongWritable, Text, Text, LongWritable> {
     private static StanfordCoreNLP pipeline;
 
-    static {
+    @Override
+    protected void setup(Context context) throws IOException, InterruptedException {
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize, ssplit, pos, lemma, parse, sentiment");
         pipeline = new StanfordCoreNLP(props);
