@@ -61,8 +61,12 @@ export default function Dashboard() {
   const companies = Object.keys(jsonData);
 
   return (
-    <Flex direction={{ base: 'row', md: 'column' }} justifyContent="center">
-      <Grid templateColumns="repeat(4, 2fr)" gap={2} w="full">
+    <Flex direction={'column'} justifyContent="center">
+      <Grid
+        templateColumns={['repeat(1, 1fr)', 'repeat(4, 2fr)']}
+        gap={2}
+        w="full"
+      >
         <Card
           variant={'outline'}
           borderWidth="1px"
@@ -127,8 +131,8 @@ export default function Dashboard() {
           }
         />
       </Grid>
-      <Flex mt={4} gap={4}>
-        <Card w="67%">
+      <Flex direction={['column', 'row']} mt={4} gap={4}>
+        <Card w={['full', '67%']} h="full">
           <CardHeader>
             <Heading textAlign={'center'} size={'lg'}>
               Sentimental Analysis of {selectedCompany}
@@ -165,7 +169,7 @@ export default function Dashboard() {
             </Tabs>
           </CardBody>
         </Card>
-        <Card w="33%">
+        <Card w={['full', '33%']}>
           <CardHeader>
             <Heading textAlign={'center'} size={'lg'}>
               Topic Modelling Analysis of {selectedCompany}
