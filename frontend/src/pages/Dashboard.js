@@ -17,7 +17,7 @@ import React, { useState, useEffect } from 'react';
 import RadarChart from '../components/RadarChart';
 import PolarPie from '../components/PolarPie';
 import jsonData from '../wordMapFinalOutput.json';
-import NLPJsonData from '../sampleNlpSaOutput.json';
+import NLPJsonData from '../nlpSaOutput.json';
 import WordCloud from '../pages/WordCloud';
 import PieChart from '../components/PieChart';
 import { ScatterChart } from '../components/ScatterChart';
@@ -193,7 +193,7 @@ export default function Dashboard() {
             <Tabs isFitted>
               <TabList>
                 <Tab>Pie Chart</Tab>
-                <Tab>Polar Pie</Tab>
+                <Tab>Polar Pie Chart</Tab>
                 <Tab>Radar Chart</Tab>
                 <Tab>Scatter Chart</Tab>
               </TabList>

@@ -1,0 +1,102 @@
+{
+    "Accenture": {
+        "Number of Reviews Analysed": 8991,
+        "Breakdown of Sentiments": {
+            "Very Positive": 251,
+            "Positive": 4997,
+            "Neutral": 1976,
+            "Negative": 1760,
+            "Very Negative": 7
+        }
+    },
+    "Apple": {
+        "Number of Reviews Analysed": 25475,
+        "Breakdown of Sentiments": {
+            "Very Positive": 2165,
+            "Positive": 17667,
+            "Neutral": 3122,
+            "Negative": 2400,
+            "Very Negative": 121
+        }
+    },
+    "Bloomberg": {
+        "Number of Reviews Analysed": 2606,
+        "Breakdown of Sentiments": {
+            "Very Positive": 136,
+            "Positive": 1622,
+            "Neutral": 451,
+            "Negative": 392,
+            "Very Negative": 5
+        }
+    },
+    "DBS": {
+        "Number of Reviews Analysed": 2471,
+        "Breakdown of Sentiments": {
+            "Very Positive": 84,
+            "Positive": 1466,
+            "Neutral": 448,
+            "Negative": 471,
+            "Very Negative": 2
+        }
+    },
+    "Google": {
+        "Number of Reviews Analysed": 14033,
+        "Breakdown of Sentiments": {
+            "Very Positive": 922,
+            "Positive": 9060,
+            "Neutral": 2254,
+            "Negative": 1783,
+            "Very Negative": 14
+        }
+    },
+    "Grab": {
+        "Number of Reviews Analysed": 1155,
+        "Breakdown of Sentiments": {
+            "Very Positive": 44,
+            "Positive": 678,
+            "Neutral": 214,
+            "Negative": 216,
+            "Very Negative": 3
+        }
+    },
+    "Meta": {
+        "Number of Reviews Analysed": 6482,
+        "Breakdown of Sentiments": {
+            "Very Positive": 414,
+            "Positive": 4159,
+            "Neutral": 1032,
+            "Negative": 870,
+            "Very Negative": 7
+        }
+    },
+    "Microsoft": {
+        "Number of Reviews Analysed": 26604,
+        "Breakdown of Sentiments": {
+            "Very Positive": 1200,
+            "Positive": 16972,
+            "Neutral": 4353,
+            "Negative": 3904,
+            "Very Negative": 25
+        }
+    },
+    "Shopee": {
+        "Number of Reviews Analysed": 2535,
+        "Breakdown of Sentiments": {
+            "Very Positive": 66,
+            "Positive": 1372,
+            "Neutral": 492,
+            "Negative": 596,
+            "Very Negative": 9
+        }
+    },
+    "United Overseas Bank": {
+        "Number of Reviews Analysed": 1022,
+        "Breakdown of Sentiments": {
+            "Very Positive": 15,
+            "Positive": 521,
+            "Neutral": 201,
+            "Negative": 284,
+            "Very Negative": 1
+        }
+    }
+}

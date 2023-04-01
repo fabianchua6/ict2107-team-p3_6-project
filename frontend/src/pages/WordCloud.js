@@ -48,7 +48,7 @@ function WordCloud({ selectedCompany }) {
   return (
     <Box>
       <Heading fontSize={'xl'} textAlign={'center'}>
-        Pros
+        Pros of working in {selectedCompany}
       </Heading>
       <ReactWordcloud
         options={proOptions}
@@ -56,7 +56,7 @@ function WordCloud({ selectedCompany }) {
         words={prosWords}
       />
       <Heading fontSize={'xl'} textAlign={'center'}>
-        Cons
+        Cons of working in {selectedCompany}
       </Heading>
       <ReactWordcloud
         options={consOptions}
