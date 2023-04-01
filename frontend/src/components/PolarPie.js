@@ -51,8 +51,8 @@ export default function PolarPie(props) {
         label: '# of Reviews',
         data: data,
         backgroundColor: [
-          'rgba(128, 255, 128, 0.5)',
           'rgba(0, 128, 0, 0.5)',
+          'rgba(128, 255, 128, 0.5)',
           'rgba(128, 128, 128, 0.5)',
           'rgba(255, 128, 128, 0.5)',
           'rgba(128, 0, 0, 0.5)',
