@@ -9,6 +9,8 @@ This is the implementation of our ICT2107 Hadoop Project done by:
 |Norman Chia |2100686|
 |Wang Qixian |2101751|
 
+You can view the dashboard demo here on https://ict2107-team-p3-6-project.vercel.app/
+
 ## 1) Running the GlassDoor Crawler
 
 1. run 'pip install -r requirements.txt'
