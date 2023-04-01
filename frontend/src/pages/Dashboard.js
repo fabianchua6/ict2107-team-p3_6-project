@@ -31,9 +31,9 @@ const CardStat = ({ title, numbers, color }) => {
   );
 };
 
-const SentimentStat = ({ title, numbers }) => {
+const SentimentStat = ({ display, title, numbers }) => {
   return (
-    <Card>
+    <Card display={display}>
       <CardBody>
         <Stat>
           <StatLabel>{title}</StatLabel>
@@ -104,6 +104,8 @@ export default function Dashboard() {
           color="red.400"
         />
         <SentimentStat
+          // hide in mobile view
+          display={{ base: 'none', md: 'block' }}
           title={'Average Sentiment Score'}
           numbers={
             jsonData[selectedCompany]?.['Average sentiment per review'] || '-'
@@ -123,6 +125,14 @@ export default function Dashboard() {
           title="Very Positive"
           numbers={sentimentData ? sentimentData[0] : '-'}
           color="green.400"
+        />
+        <SentimentStat
+          // show in mobile view
+          display={{ base: 'block', md: 'none' }}
+          title={'Average Sentiment Score'}
+          numbers={
+            jsonData[selectedCompany]?.['Average sentiment per review'] || '-'
+          }
         />
         <SentimentStat
           title={'Number of Reviews Analysed'}
