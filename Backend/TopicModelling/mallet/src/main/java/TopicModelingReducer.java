@@ -100,7 +100,8 @@ public class TopicModelingReducer extends Reducer<Text, Text, Text, Text> {
         pipeList.add(new CharSequenceLowercase());
         pipeList.add(new CharSequence2TokenSequence(Pattern.compile("\\p{L}[\\p{L}\\p{P}]+\\p{L}")));
         pipeList.add(new TokenSequenceLowercase()); // added
-        pipeList.add(new TokenSequenceRemoveStopwords(stopWordsFile, "UTF-8", false, false, false));
+        pipeList.add(new TokenSequenceRemoveStopwords(stopWordsFile, "UTF-8",
+                false, false, false));
         pipeList.add(new TokenSequence2FeatureSequence());
         Pipe pipeline = new SerialPipes(pipeList);
 
@@ -111,7 +112,8 @@ public class TopicModelingReducer extends Reducer<Text, Text, Text, Text> {
         for (Instance instance : instances) {
             FeatureSequence featureSequence = (FeatureSequence) instance.getData();
             for (int i = 0; i < featureSequence.size(); i++) {
-                String word = (String) featureSequence.getAlphabet().lookupObject(featureSequence.getIndexAtPosition(i));
+                String word = (String) featureSequence.getAlphabet().lookupObject(
+                        featureSequence.getIndexAtPosition(i));
                 if (wordCounts.containsKey(word)) {
                     wordCounts.put(word, wordCounts.get(word) + 1);
                 } else {
