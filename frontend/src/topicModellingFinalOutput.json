@@ -1,272 +1,262 @@
-[
-  {
-    "company": "Accenture",
-    "pros": [
-      "company",
-      "people",
-      "opportunities",
-      "culture",
-      "benefits",
-      "environment",
-      "balance",
-      "learning",
-      "projects",
-      "life"
-    ],
-    "cons": [
-      "hours",
-      "project",
-      "balance",
-      "long",
-      "salary",
-      "company",
-      "life",
-      "projects",
-      "management",
-      "people"
-    ]
+{
+  "Accenture": {
+    "Pros Topic": {
+      "company": 1814,
+      "people": 1586,
+      "opportunities": 1133,
+      "culture": 1161,
+      "benefits": 971,
+      "environment": 903,
+      "balance": 1455,
+      "learning": 732,
+      "projects": 1251,
+      "life": 1251
+    },
+    "Cons Topic": {
+      "hours": 914,
+      "project": 1085,
+      "balance": 1455,
+      "long": 732,
+      "salary": 1152,
+      "company": 1814,
+      "life": 1251,
+      "projects": 1251,
+      "management": 802,
+      "people": 1586
+    }
   },
-  {
-    "company": "Apple",
-    "pros": [
-      "benefits",
-      "people",
-      "company",
-      "pay",
-      "environment",
-      "products",
-      "culture",
-      "team",
-      "employees",
-      "place"
-    ],
-    "cons": [
-      "retail",
-      "management",
-      "hours",
-      "time",
-      "company",
-      "people",
-      "customers",
-      "balance",
-      "employees",
-      "pay"
-    ]
+  "Apple": {
+    "Pros Topic": {
+      "benefits": 7299,
+      "people": 7647,
+      "company": 6438,
+      "pay": 4764,
+      "environment": 3872,
+      "products": 2526,
+      "culture": 2709,
+      "team": 2393,
+      "employees": 3192,
+      "place": 2043
+    },
+    "Cons Topic": {
+      "retail": 4392,
+      "management": 4066,
+      "hours": 3439,
+      "time": 3938,
+      "company": 6438,
+      "people": 7647,
+      "customers": 2693,
+      "balance": 2226,
+      "employees": 3192,
+      "pay": 4764
+    }
   },
-  {
-    "company": "Bloomberg",
-    "pros": [
-      "benefits",
-      "people",
-      "company",
-      "culture",
-      "balance",
-      "environment",
-      "free",
-      "office",
-      "pay",
-      "life"
-    ],
-    "cons": [
-      "management",
-      "company",
-      "people",
-      "hours",
-      "long",
-      "career",
-      "time",
-      "culture",
-      "employees",
-      "managers"
-    ]
+  "Bloomberg": {
+    "Pros Topic": {
+      "benefits": 730,
+      "people": 733,
+      "company": 806,
+      "culture": 533,
+      "balance": 323,
+      "environment": 343,
+      "free": 276,
+      "office": 308,
+      "pay": 328,
+      "life": 258
+    },
+    "Cons Topic": {
+      "management": 413,
+      "company": 806,
+      "people": 733,
+      "hours": 297,
+      "long": 219,
+      "career": 285,
+      "time": 234,
+      "culture": 533,
+      "employees": 257,
+      "managers": 159
+    }
   },
-  {
-    "company": "DBS",
-    "pros": [
-      "benefits",
-      "culture",
-      "environment",
-      "bank",
-      "life",
-      "balance",
-      "colleagues",
-      "staff",
-      "company",
-      "people"
-    ],
-    "cons": [
-      "long",
-      "hours",
-      "management",
-      "life",
-      "balance",
-      "pay",
-      "time",
-      "culture",
-      "slow",
-      "people"
-    ]
+  "DBS": {
+    "Pros Topic": {
+      "benefits": 707,
+      "culture": 483,
+      "environment": 385,
+      "bank": 374,
+      "life": 521,
+      "balance": 502,
+      "colleagues": 259,
+      "staff": 317,
+      "company": 288,
+      "people": 329
+    },
+    "Cons Topic": {
+      "long": 381,
+      "hours": 406,
+      "management": 483,
+      "life": 521,
+      "balance": 502,
+      "pay": 326,
+      "time": 207,
+      "culture": 483,
+      "slow": 156,
+      "people": 329
+    }
   },
-  {
-    "company": "Google",
-    "pros": [
-      "people",
-      "benefits",
-      "company",
-      "culture",
-      "environment",
-      "place",
-      "perks",
-      "pay",
-      "balance",
-      "food"
-    ],
-    "cons": [
-      "company",
-      "long",
-      "hours",
-      "time",
-      "people",
-      "slow",
-      "management",
-      "balance",
-      "culture",
-      "life"
-    ]
+  "Google": {
+    "Pros Topic": {
+      "people": 2649,
+      "benefits": 1880,
+      "company": 3101,
+      "culture": 1913,
+      "environment": 1444,
+      "place": 1348,
+      "perks": 1060,
+      "pay": 1207,
+      "balance": 1309,
+      "food": 1042
+    },
+    "Cons Topic": {
+      "company": 3101,
+      "long": 625,
+      "hours": 734,
+      "time": 846,
+      "people": 2649,
+      "slow": 545,
+      "management": 645,
+      "balance": 1309,
+      "culture": 1913,
+      "life": 1143
+    }
   },
-  {
-    "company": "Grab",
-    "pros": [
-      "culture",
-      "environment",
-      "people",
-      "company",
-      "benefits",
-      "team",
-      "life",
-      "flexible",
-      "balance",
-      "colleagues"
-    ],
-    "cons": [
-      "company",
-      "people",
-      "management",
-      "team",
-      "time",
-      "culture",
-      "life",
-      "fast",
-      "balance",
-      "managers"
-    ]
+  "Grab": {
+    "Pros Topic": {
+      "culture": 325,
+      "environment": 275,
+      "people": 384,
+      "company": 344,
+      "benefits": 194,
+      "team": 294,
+      "life": 235,
+      "flexible": 141,
+      "balance": 215,
+      "colleagues": 130
+    },
+    "Cons Topic": {
+      "company": 344,
+      "people": 384,
+      "management": 187,
+      "team": 294,
+      "time": 216,
+      "culture": 325,
+      "life": 235,
+      "fast": 202,
+      "balance": 215,
+      "managers": 99
+    }
   },
-  {
-    "company": "Meta",
-    "pros": [
-      "benefits",
-      "people",
-      "culture",
-      "company",
-      "perks",
-      "pay",
-      "food",
-      "salary",
-      "compensation",
-      "environment"
-    ],
-    "cons": [
-      "company",
-      "life",
-      "balance",
-      "people",
-      "culture",
-      "team",
-      "time",
-      "management",
-      "leadership",
-      "performance"
-    ]
+  "Meta": {
+    "Pros Topic": {
+      "benefits": 1929,
+      "people": 2111,
+      "culture": 1494,
+      "company": 1887,
+      "perks": 798,
+      "pay": 817,
+      "food": 523,
+      "salary": 548,
+      "compensation": 525,
+      "environment": 664
+    },
+    "Cons Topic": {
+      "company": 1887,
+      "life": 1034,
+      "balance": 989,
+      "people": 2111,
+      "culture": 1494,
+      "team": 843,
+      "time": 554,
+      "management": 528,
+      "leadership": 509,
+      "performance": 329
+    }
   },
-  {
-    "company": "Microsoft",
-    "pros": [
-      "benefits",
-      "people",
-      "company",
-      "culture",
-      "balance",
-      "life",
-      "environment",
-      "opportunities",
-      "pay",
-      "place"
-    ],
-    "cons": [
-      "company",
-      "management",
-      "people",
-      "politics",
-      "time",
-      "balance",
-      "slow",
-      "team",
-      "culture",
-      "life"
-    ]
+  "Microsoft": {
+    "Pros Topic": {
+      "benefits": 6084,
+      "people": 6307,
+      "company": 7762,
+      "culture": 4713,
+      "balance": 4855,
+      "life": 3774,
+      "environment": 2848,
+      "opportunities": 2475,
+      "pay": 2685,
+      "place": 2141
+    },
+    "Cons Topic": {
+      "company": 7762,
+      "management": 2536,
+      "people": 6307,
+      "politics": 1599,
+      "time": 1984,
+      "balance": 4855,
+      "slow": 1278,
+      "team": 2435,
+      "culture": 4713,
+      "life": 3774
+    }
   },
-  {
-    "company": "Shopee",
-    "pros": [
-      "environment",
-      "team",
-      "people",
-      "benefits",
-      "fast",
-      "learn",
-      "company",
-      "colleagues",
-      "culture",
-      "office"
-    ],
-    "cons": [
-      "management",
-      "company",
-      "team",
-      "hours",
-      "life",
-      "people",
-      "balance",
-      "chinese",
-      "long",
-      "culture"
-    ]
+  "Shopee": {
+    "Pros Topic": {
+      "environment": 504,
+      "team": 560,
+      "people": 541,
+      "benefits": 373,
+      "fast": 404,
+      "learn": 299,
+      "company": 603,
+      "colleagues": 283,
+      "culture": 480,
+      "office": 308
+    },
+    "Cons Topic": {
+      "management": 489,
+      "company": 603,
+      "team": 560,
+      "hours": 320,
+      "life": 374,
+      "people": 541,
+      "balance": 352,
+      "chinese": 271,
+      "long": 255,
+      "culture": 480
+    }
   },
-  {
-    "company": "United Overseas Bank",
-    "pros": [
-      "benefits",
-      "colleagues",
-      "environment",
-      "culture",
-      "balance",
-      "life",
-      "friendly",
-      "family",
-      "people",
-      "bonus"
-    ],
-    "cons": [
-      "long",
-      "hours",
-      "management",
-      "life",
-      "balance",
-      "culture",
-      "pay",
-      "slow",
-      "salary",
-      "progression"
-    ]
+  "United Overseas Bank": {
+    "Pros Topic": {
+      "benefits": 212,
+      "colleagues": 142,
+      "environment": 162,
+      "culture": 194,
+      "balance": 198,
+      "life": 203,
+      "friendly": 77,
+      "family": 82,
+      "people": 109,
+      "bonus": 82
+    },
+    "Cons Topic": {
+      "long": 212,
+      "hours": 213,
+      "management": 173,
+      "life": 203,
+      "balance": 198,
+      "culture": 194,
+      "pay": 152,
+      "slow": 90,
+      "salary": 113,
+      "progression": 96
+    }
   }
-]
+}
