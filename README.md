@@ -17,3 +17,12 @@ You can view the dashboard demo here on https://ict2107-team-p3-6-project.vercel
 2. change GlassDoor link on line 142 of GlassDoorCrawler.py to the company you want to crawl
 3. Run GlassDoorCrawler.py
 4. Crawled reviews will be automatically saved to a CSV file named after the company
+
+## 2) Running the Sentimental Analysis JAR
+
+## 3) Running the Topic Modelling JAR
+
+1. Ensure that the input directory and a list of stopwords is present in the HDFS. (Reader use the stopwords that we have used by going to the following directory: Backend > TopicModelling > mallet > stopwords.txt
+2. The input directory can contain 1 or more csv files in the following format: Summary,Date,JobTitle,AuthorLocation,OverallRating,Pros,Cons
+3. Navigate to the folder that contains the topic modelling jar file.
+4. Usage: hadoop jar group_p3_6.jar input_dir output_dir stopwords.txt
