@@ -14,18 +14,22 @@ import java.net.URI;
 public class WordComparisonAnalysis {
 
     public static void main(String[] args) throws Exception {
+        if (args.length != 3) {
+            System.err.println("INCORRECT NUMBER OF ARGUMENTS \nUsage: org.example.WordComparisonAnalysis <input path> <output path> <cache file>");
+            System.exit(-1);
+        }
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "WordComparisonAnalysis");
         job.setJarByClass(WordComparisonAnalysis.class);
 
         // Set input and output paths
-        Path inPath = new Path("hdfs://localhost:9000/user/shaunv/project/wordMapInput/");
-        Path outPath = new Path("hdfs://localhost:9000/user/shaunv/project/wordMapOutput/");
+        Path inPath = new Path(args[0]);
+        Path outPath = new Path(args[1]);
         // Delete any previous outputs
         outPath.getFileSystem(conf).delete(outPath, true);
 
         // Add words.csv to the distributed cache
-        job.addCacheFile(new URI("hdfs://localhost:9000/user/shaunv/project/words.csv"));
+        job.addCacheFile(new URI(args[2]));
 
         //Add ChainMapper configs
         Configuration validationConf = new Configuration(false);

@@ -12,16 +12,17 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class GlassdoorSentimentAnalysis {
 
     public static void main(String[] args) throws Exception {
+        if (args.length != 3) {
+            System.err.println("INCORRECT NUMBER OF ARGUMENTS \nUsage: org.example.GlassdoorSentimentAnalysis <input path> <output path>");
+            System.exit(-1);
+        }
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "GlassdoorSentimentAnalysis");
         job.setJarByClass(GlassdoorSentimentAnalysis.class);
 
         // Set input and output paths
-//        Path inPath = new Path("hdfs://localhost:9000/user/project/input/");
-//        Path outPath = new Path("hdfs://localhost:9000/user/project/output/");
-
-        Path inPath = new Path("hdfs://localhost:9000/user/shaunv/project/test/input/");
-        Path outPath = new Path("hdfs://localhost:9000/user/shaunv/project/test/output/");
+        Path inPath = new Path(args[1]);
+        Path outPath = new Path(args[2]);
         // Delete any previous outputs
         outPath.getFileSystem(conf).delete(outPath, true);
 
@@ -38,7 +39,6 @@ public class GlassdoorSentimentAnalysis {
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(LongWritable.class);
 
-//        job.setCombinerClass(SentimentReducer.class);
         job.setReducerClass(SentimentReducer.class);
 
         job.setOutputKeyClass(Text.class);
