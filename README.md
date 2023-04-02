@@ -35,7 +35,7 @@ You can view the dashboard demo here on https://ict2107-team-p3-6-project.vercel
 
 #### 2.2) Running CoreNLP Sentimental Analysis JAR
 
-> :warning: **Running the CoreNLP analysis on large datasets is VERY resource intensive and takes a VERY LONG time**: We reccomend using a smaller test dataset!
+> :warning: **Running the CoreNLP analysis on large datasets is VERY resource intensive and takes a VERY LONG time**: We recommend using a smaller test dataset!
 
 1. Ensure that the input, output directory is present in the HDFS.
 2. The input directory should contain 1 or more csv files as input data in the following format: Summary,Date,JobTitle,AuthorLocation,OverallRating,Pros,Cons
