@@ -235,5 +235,10 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'Dashboard',
+    href: '#',
+  },
+  {
+    label: 'About',
+    href: '/about',
   },
 ];

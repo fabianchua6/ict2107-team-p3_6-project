@@ -2,8 +2,8 @@ import React from 'react';
 import { ChakraProvider, Container, theme } from '@chakra-ui/react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
-import WordCloud from './pages/WordCloud';
 import NavBar from './components/NavBar';
+import About from './pages/About';
 
 const router = createBrowserRouter([
   {
@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <Dashboard />,
   },
   {
-    path: '/wordcloud',
-    element: <WordCloud />,
+    path: '/about',
+    element: <About />,
   },
 ]);
 
