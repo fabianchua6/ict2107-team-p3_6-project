@@ -6,6 +6,7 @@ import {
   Image,
   Flex,
   VStack,
+  Link,
   Heading,
   SimpleGrid,
   StackDivider,
@@ -15,7 +16,7 @@ import {
   ListIcon,
 } from '@chakra-ui/react';
 
-import { CheckCircleIcon } from '@chakra-ui/icons';
+import { CheckCircleIcon, ExternalLinkIcon } from '@chakra-ui/icons';
 
 export default function About() {
   return (
@@ -84,6 +85,35 @@ export default function About() {
                 modeling.
               </Text>
             </VStack>
+            <Box>
+              <Text
+                fontSize={{ base: '16px', lg: '18px' }}
+                color={useColorModeValue('yellow.500', 'yellow.300')}
+                fontWeight={'500'}
+                textTransform={'uppercase'}
+                mb={'4'}
+              >
+                Learn More
+              </Text>
+              <VStack align="left">
+                <Link
+                  textDecoration="underline"
+                  href="https://youtu.be/sNs5lr6LGhk"
+                  isExternal
+                >
+                  View our demo video on YouTube <ExternalLinkIcon mx="2px" />
+                </Link>
+                <Link
+                  // underline text
+                  textDecoration="underline"
+                  href="https://github.com/fabianchua6/ict2107-team-p3_6-project"
+                  isExternal
+                >
+                  Access our GitHub repository
+                  <ExternalLinkIcon mx="2px" />
+                </Link>
+              </VStack>
+            </Box>
             <Box>
               <Text
                 fontSize={{ base: '16px', lg: '18px' }}
