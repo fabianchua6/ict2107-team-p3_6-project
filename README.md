@@ -52,4 +52,5 @@ You can view the dashboard demo here on https://ict2107-team-p3-6-project.vercel
 2. The input directory should contain 1 or more csv files as input data in the following format: Summary,Date,JobTitle,AuthorLocation,OverallRating,Pros,Cons
 3. Navigate to the folder that contains the topic modelling jar file.
 4. Usage: hadoop jar group_p3_6_tm.jar <input_dir> <output_dir> <stopwords.txt>
-5. Output will be present in the output_dir specified in HDFS.
+5. Example usage : <pre><code>hadoop jar group_p3_6_tm.jar project/input project/output project/stopwords.txt </code></pre>
+6. Output will be present in the output_dir specified in HDFS.
