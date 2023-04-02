@@ -129,7 +129,7 @@ export default function Dashboard() {
           //
           numbers={
             useNLPData
-              ? '-'
+              ? NLPJsonData[selectedCompany]?.['Average sentiment per review']
               : jsonData[selectedCompany]?.['Average sentiment per review']
           }
         />
@@ -157,7 +157,7 @@ export default function Dashboard() {
           title={'Average Sentiment Score'}
           numbers={
             useNLPData
-              ? '-'
+              ? NLPJsonData[selectedCompany]?.['Average sentiment per review']
               : jsonData[selectedCompany]?.['Average sentiment per review']
           }
         />
@@ -165,7 +165,7 @@ export default function Dashboard() {
           title={'Number of Reviews Analysed'}
           numbers={
             useNLPData
-              ? '-'
+              ? NLPJsonData[selectedCompany]?.['Number of Reviews Analysed']
               : jsonData[selectedCompany]?.['Number of Reviews Analysed']
           }
         />
